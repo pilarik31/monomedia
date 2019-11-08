@@ -1,0 +1,17 @@
+@import 'old.scss';
+
+#main-nav {
+    background: white;
+
+    .navbar-brand {
+        height: 76px;
+        position: relative;
+        line-height: 60px;
+        padding: 7px 15px;
+        display: inline-block;
+    }
+
+    .navbar-brand>img {
+        max-height: 100%;
+    }
+}
