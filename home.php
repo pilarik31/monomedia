@@ -1,7 +1,6 @@
 <?php
-
-
-get_header(); ?>
+get_header(); 
+?>
 
 <div class="clear"></div>
 
