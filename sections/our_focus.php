@@ -1,22 +1,35 @@
 <section class="focus" id="focus">
-<div class="container">
-	<!-- SECTION HEADER -->
-	<div class="section-header">
-		<!-- SECTION TITLE -->
-		<?php
-		echo '<h2 class="dark-text">' . esc_html__( 'SLUŽBY' ) . '</h2>';
-		echo '<h6>' . esc_html__('Lorem ipsum dolor sit amet' ) . '</h6>';
-		?>
-	</div>
+	<div class="container">
+		<!-- SECTION HEADER -->
+		<div class="section-header">
+			<!-- SECTION TITLE -->
 
-	<div class="row">
-		<?php
+			<?php
+			$zerif_ourfocus_title = get_theme_mod( 'zerif_ourfocus_title', __( 'FEATURES', 'zerif-lite' ) );
 
-			if ( is_active_sidebar( 'sidebar-ourfocus' ) ) :
+			if ( ! empty( $zerif_ourfocus_title ) ) {
+				echo '<h2 class="dark-text">' . __( $zerif_ourfocus_title, 'zerif-lite' ) . '</h2>';
+			}
+
+			$zerif_ourfocus_subtitle = get_theme_mod( 'zerif_ourfocus_subtitle', __( 'What makes this single-page WordPress theme unique.', 'zerif-lite' ) );
+
+			if ( ! empty( $zerif_ourfocus_subtitle ) ) {
+				echo '<h6>' . __( $zerif_ourfocus_subtitle, 'zerif-lite' ) . '</h6>';
+			}
+			?>
+		</div>
+
+
+
+
+
+		<div class="row">
+			<?php
+
+			if ( is_active_sidebar( 'sidebar-ourfocus' ) ) {
 
 				dynamic_sidebar( 'sidebar-ourfocus' );
-
-			else :
+			} else {
 
 				the_widget(
 					'zerif_ourfocus',
@@ -53,19 +66,8 @@
 						'after_widget'  => '',
 					)
 				);
-
-			endif;
-
+			}
 			?>
-
-
-
-	</div>
-
-
-
-</div> <!-- / END CONTAINER -->
-
-
-
-</section>  <!-- / END FOCUS SECTION -->
+		</div>
+	</div> <!-- / END CONTAINER -->
+</section> <!-- / END FOCUS SECTION -->
