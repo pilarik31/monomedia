@@ -8,7 +8,7 @@
 			$zerif_ourfocus_title = get_theme_mod( 'zerif_ourfocus_title', __( 'FEATURES', 'zerif-lite' ) );
 
 			if ( ! empty( $zerif_ourfocus_title ) ) {
-				echo '<h2 class="dark-text">' . __( $zerif_ourfocus_title, 'zerif-lite' ) . '</h2>';
+				echo '<h2 class="dark-text green-border-bottom">' . __( $zerif_ourfocus_title, 'zerif-lite' ) . '</h2>';
 			}
 
 			$zerif_ourfocus_subtitle = get_theme_mod( 'zerif_ourfocus_subtitle', __( 'What makes this single-page WordPress theme unique.', 'zerif-lite' ) );
@@ -36,7 +36,7 @@
 					'title=PARALLAX EFFECT&text=Create memorable pages with smooth parallax effects that everyone loves. Also, use our lightweight content slider offering you smooth and great-looking animations.&link=#&image_uri=' . get_stylesheet_directory_uri() . '/images/parallax.png',
 					array(
 						'before_widget' => '',
-						'after_widget'  => '',
+						'after_widget'  => '->',
 					)
 				);
 

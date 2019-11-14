@@ -4243,4 +4243,12 @@ body.custom-background {
   max-height: 100%;
 }
 
+.header-content-wrap .buttons .custom-button {
+  font-size: 1.5em;
+  padding: 5px 1.5em 5px 1.5em;
+  border-radius: 4px;
+  margin: 10px;
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */

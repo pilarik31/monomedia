@@ -77,6 +77,7 @@ function zerif_setup()
     register_nav_menus(array(
 
         'primary' => __('Primary Menu', 'zerif-lite'),
+        'secondary' => __('Secondary Menu', 'zerif-lite'),
 
     ));
 
