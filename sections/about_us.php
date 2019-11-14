@@ -7,7 +7,7 @@
 			$zerif_aboutus_title = get_theme_mod( 'zerif_aboutus_title', __( 'About', 'zerif-lite' ) );
 
 			if ( ! empty( $zerif_aboutus_title ) ) {
-				echo '<h2 class="white-text">' . __( $zerif_aboutus_title, 'zerif-lite' ) . '</h2>';
+				echo '<h2 class="white-text">' . esc_html__( $zerif_aboutus_title, 'zerif-lite' ) . '</h2>';
 			}
 
 			?>
@@ -122,7 +122,7 @@
 					}
 
 					$zerif_aboutus_feature3_title = get_theme_mod( 'zerif_aboutus_feature3_title', __( 'YOUR SKILL #3', 'zerif-lite' ) );
-					$zerif_aboutus_feature3_text = get_theme_mod( 'zerif_aboutus_feature3_text' );
+					$zerif_aboutus_feature3_text  = get_theme_mod( 'zerif_aboutus_feature3_text' );
 
 					if ( ! empty( $zerif_aboutus_feature3_title ) ) {
 						echo '<h6>' . __( $zerif_aboutus_feature3_title, 'zerif-lite' ) . '</h6>';
@@ -130,7 +130,7 @@
 
 					if ( ! empty( $zerif_aboutus_feature3_text ) ) {
 						echo '<p>' . __( $zerif_aboutus_feature3_text, 'zerif-lite' ) . '</p>';
-					}s
+					}
 					?>
 				</li>
 
