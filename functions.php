@@ -1,15 +1,13 @@
 <?php
-
 /**
- * zerif functions and definitions
+ * Monomedia functions and definitions
  *
- * @package zerif
+ * @package Monomedia
  */
 
 
 /**
  * Set the content width based on the theme's design and stylesheet.
-
  */
 
 
@@ -19,7 +17,6 @@
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
-
  */
 
 function zerif_setup()

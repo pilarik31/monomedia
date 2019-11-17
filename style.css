@@ -4242,6 +4242,23 @@ body.custom-background {
 #main-nav .navbar-brand > img {
   max-height: 100%;
 }
+#main-nav #menu-references-menu #menu-item-61 > a {
+  color: #e96656;
+  position: relative;
+  outline: none;
+}
+#main-nav #menu-references-menu #menu-item-61 a:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #e96656;
+  bottom: 0px;
+  left: 12.5%;
+  display: block;
+}
 
 .header-content-wrap .buttons .custom-button {
   font-size: 1.5em;

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The Header the theme.
  *
@@ -94,7 +93,7 @@ PRE LOADER
 						<button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
 							data-target=".bs-navbar-collapse">
 
-							<span class="sr-only"><?php _e( 'Toggle navigation', 'zerif-lite' ); ?></span>
+							<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'zerif-lite' ); ?></span>
 
 							<span class="icon-bar"></span>
 
@@ -111,7 +110,7 @@ PRE LOADER
 
 						if ( file_exists( get_stylesheet_directory() . '/img/logo.png' ) ) {
 							echo '<img src="' . get_stylesheet_directory_uri() . '/img/logo.png"
-                                 alt="' . get_bloginfo( 'title' ) . '">';
+                                 alt="' . esc_html( get_bloginfo( 'title' ) ) . '">';
 						}
 						echo '</a>';
 						?>

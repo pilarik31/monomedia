@@ -14,6 +14,29 @@
     .navbar-brand>img {
         max-height: 100%;
     }
+
+    #menu-references-menu {
+        #menu-item-61 {
+            &>a {
+                color: #e96656;
+                position: relative;
+                outline: none;
+            }
+
+            a:before {
+                position: absolute;
+                margin: auto;
+                z-index: 1;
+                content: "";
+                width: 75%;
+                height: 2px;
+                background: #e96656;
+                bottom: 0px;
+                left: 12.5%;
+                display: block;
+            }
+        }
+    }
 }
 
 .header-content-wrap {
