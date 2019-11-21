@@ -17,7 +17,7 @@ echo '<a href="#" class="btn btn-primary custom-button green-btn">'
 . '</a>';
 
 
-echo '<a href="#" class="btn btn-primary custom-button blue-btn">'
+echo '<a href="#latestnews" class="btn btn-primary custom-button blue-btn">'
 . esc_html__( 'REFERENCE' )
 . '</a>';
 
