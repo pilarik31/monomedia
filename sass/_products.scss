@@ -1,7 +1,6 @@
 // Styling for the portfolio section
-#latest
-
-#portfolio {
+#products {
+    background: $white;
     .portfolio-item {
         right: 0;
         margin: 0 0 0px;
@@ -22,7 +21,6 @@
         .post-img-wrap {
             float: initial;
             margin-right: initial;
-            //display: inline-block;
             overflow: hidden;
         }
 
@@ -69,7 +67,7 @@
         margin: 0 auto;
         padding: 25px;
         text-align: center;
-        
+
         .entry-title:before {
             position: absolute;
             margin: auto;

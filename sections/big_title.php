@@ -12,7 +12,7 @@ echo '<a href="#" class="btn btn-primary custom-button red-btn">'
 . esc_html__( 'PRODUKTY' )
 . '</a>';
 
-echo '<a href="#" class="btn btn-primary custom-button green-btn">'
+echo '<a href="#aboutus" class="btn btn-primary custom-button green-btn">'
 . esc_html__( 'O NÁS' )
 . '</a>';
 

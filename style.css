@@ -4315,6 +4315,95 @@ body.custom-background {
     margin: 0 0 30px;
   }
 }
+#products {
+  background: #FFFFFF;
+}
+#products .portfolio-item {
+  right: 0;
+  margin: 0 0 0px;
+  /* WIP */
+  /* END WIP */
+}
+#products .portfolio-item .post-img-wrap a {
+  text-align: center;
+}
+#products .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#products .portfolio-item .post-img-wrap {
+  float: initial;
+  margin-right: initial;
+  overflow: hidden;
+}
+#products .portfolio-item .portfolio-no-image {
+  width: 250px;
+  height: 250px;
+}
+#products .portfolio-item .post-img-wrap a img {
+  width: initial;
+  height: initial;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3 ease-out;
+}
+#products .portfolio-item .post-img-wrap a:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5 ease-out;
+}
+#products .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+}
+#products .portfolio-caption .entry-title:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #e96656;
+  bottom: -9px;
+  left: 0;
+}
+#products .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+#products .portfolio-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+}
+#products * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
 #main-nav {
   background: white;
 }
@@ -4352,6 +4441,24 @@ body.custom-background {
   border-radius: 4px;
   margin: 10px;
   border: none;
+}
+
+#testimonials {
+  background: #50AC48;
+  padding-top: initial;
+}
+
+#aboutus {
+  background: #50AC48;
+  padding-bottom: 20px;
+}
+#aboutus .skills .skill p {
+  line-height: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#aboutus .zerif_about_us_center p {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 @import 'old.scss';
+@import 'variables.scss';
 @import 'portfolio.scss';
+@import 'products.scss';
 
 #main-nav {
     background: white;
@@ -49,5 +51,32 @@
             margin: 10px;
             border: none;
         }
+    }
+}
+
+#testimonials {
+    background: #50AC48;
+    padding-top: initial;
+}
+
+#aboutus {
+    background: #50AC48;
+    padding-bottom: 20px;
+
+    .skills {
+        .skill {
+            p {
+                line-height: 20px;
+                font-size: 14px;
+                color: $white;
+            }
+        }
+    }
+
+    .zerif_about_us_center {
+        p {
+            color: $white;
+        }
+
     }
 }
