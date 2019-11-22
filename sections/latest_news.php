@@ -33,9 +33,10 @@ if ( ! empty( $zerif_latestnews_subtitle ) ) {
 							$paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 							$wp_query = new WP_Query(
 								array(
-									'post_type' => 'post',
-									'showposts' => '8',
-									'paged'     => $paged,
+									'post_type'     => 'post',
+									'showposts'     => '8',
+									'paged'         => $paged,
+									'category_name' => 'references',
 								)
 							);
 

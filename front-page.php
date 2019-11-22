@@ -188,7 +188,7 @@ if ( isset( $zerif_bigtitle_show ) && $zerif_bigtitle_show != 1 ) {
 		include get_template_directory() . '/sections/latest_news.php';
 	}
 
-	if (true) {
+	if ( true ) {
 		include get_template_directory() . '/sections/products.php';
 	}
 

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Products main page section
  *
@@ -15,12 +14,8 @@ echo '<div class="section-header">';
 /* title */
 echo '<h2 class="dark-text">' . esc_html__( 'PRODUKTY' ) . '</h2>';
 
+echo '<h6 class="dark-text">' . esc_html__( '' ) . '</h6>';
 
-/* subtitle */
-$zerif_latestnews_subtitle = get_theme_mod( 'zerif_latestnews_subtitle' );
-if ( ! empty( $zerif_latestnews_subtitle ) ) {
-	echo '<h6 class="dark-text">' . $zerif_latestnews_subtitle . '</h6>';
-}
 /* START */
 ?>
 <div id="primary" class="content-area">
@@ -33,9 +28,10 @@ if ( ! empty( $zerif_latestnews_subtitle ) ) {
 				$paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 				$wp_query = new WP_Query(
 					array(
-						'post_type' => 'post',
-						'showposts' => '8',
-						'paged'     => $paged,
+						'post_type'     => 'post',
+						'showposts'     => '8',
+						'paged'         => $paged,
+						'category_name' => 'products',
 					)
 				);
 
