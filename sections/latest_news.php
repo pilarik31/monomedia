@@ -23,9 +23,9 @@ if ( ! empty( $zerif_latestnews_subtitle ) ) {
 }
 /* START */
 ?>
-		<div id="primary" class="content-area">
+		<div class="content-area">
 
-			<main id="main" class="site-main" role="main">
+			<main class="site-main" role="main">
 				<section class="page-section" id="portfolio">
 					<!-- <div class="container"> -->
 						<div class="portfolio-box">

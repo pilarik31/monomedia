@@ -129,12 +129,21 @@ if ( isset( $_POST['scrollPosition'] ) ) {
 									'fallback_cb'    => 'zerif_wp_page_menu',
 								)
 							);
-						} else {
+						} elseif ( in_category( 'references' ) ) {
 							wp_nav_menu(
 								array(
 									'theme_location' => 'secondary',
 									'container'      => false,
 									'menu_class'     => 'nav navbar-nav navbar-right responsive-nav main-nav-list',
+									'fallback_cb'    => 'zerif_wp_page_menu',
+								)
+							);
+						} elseif ( in_category( 'products' ) ) {
+							wp_nav_menu(
+								array(
+									'theme_location' => 'secondary',
+									'container'      => false,
+									'menu_class'     => 'nav navbar-nav navbar-right responsive-nav main-nav-list menu-products-menu',
 									'fallback_cb'    => 'zerif_wp_page_menu',
 								)
 							);

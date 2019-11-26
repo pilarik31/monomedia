@@ -4404,6 +4404,11 @@ body.custom-background {
     margin: 0 0 30px;
   }
 }
+#focus .cool-arrow-img {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 #main-nav {
   background: white;
 }
@@ -4417,12 +4422,46 @@ body.custom-background {
 #main-nav .navbar-brand > img {
   max-height: 100%;
 }
-#main-nav #menu-references-menu #menu-item-61 > a {
+#main-nav #menu-single-page-menu #menu-item-61 > a {
   color: #e96656;
   position: relative;
   outline: none;
 }
-#main-nav #menu-references-menu #menu-item-61 a:before {
+#main-nav #menu-single-page-menu #menu-item-61 a:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: #e96656;
+  bottom: 0px;
+  left: 12.5%;
+  display: block;
+}
+#main-nav .menu-products-menu #menu-item-61 > a {
+  color: initial !important;
+  position: relative !important;
+  outline: none !important;
+}
+#main-nav .menu-products-menu #menu-item-61 a:before {
+  position: initial !important;
+  margin: initial !important;
+  z-index: initial !important;
+  content: initial !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: initial !important;
+  bottom: 0px !important;
+  left: initial !important;
+  display: none !important;
+}
+#main-nav .menu-products-menu #menu-item-60 > a {
+  color: #e96656;
+  position: relative;
+  outline: none;
+}
+#main-nav .menu-products-menu #menu-item-60 a:before {
   position: absolute;
   margin: auto;
   z-index: 1;

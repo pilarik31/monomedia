@@ -20,7 +20,7 @@ echo '<h6 class="dark-text">' . esc_html__( '' ) . '</h6>';
 ?>
 <div id="primary" class="content-area">
 
-	<main id="main" class="site-main" role="main">
+	<main class="site-main" role="main">
 		<section class="page-section">
 			<!-- <div class="container"> -->
 			<div class="product-box">
